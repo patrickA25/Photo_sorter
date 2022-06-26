@@ -52,7 +52,7 @@ def moving_pictures(folder_location,extension_list):
     for file in file_list:
         file_list_split = os.path.splitext(file)
         if file_list_split[1] in extension_list:
-            print(file_list_split)
+            #print(file_list_split)
             old_path = os.path.join(folder_location,file)
             new_path = os.path.join(folder_location,str(file_list_split[1]) + "_Pictures\\"+file)
             os.rename(old_path,new_path)

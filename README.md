@@ -1,9 +1,34 @@
-# Photo Sorting 
----
+# Photo Sorter
 
 ## Overview
+Photo Sorter is a simple Python script that helps organize files in a directory by sorting them into subfolders based on their file extension. This tool is especially useful for managing large directories, making them easier to navigate and maintain.
 
-This code will first find all of the file extension that exist in a give directory. It will take a list of strings provided by the user and create a new directory for each file extension. After the new direecoties are created it will move any files with that file extension to the new directory.
+## Features
+- **Automated Sorting:** Automatically sorts files into appropriately named subfolders based on their file extension.
+- **Easy to Use:** Run the script from the terminal—no complex setup required.
+
+## Installation
+
+### Prerequisites
+- Python 3.x
+
+### Setup
+1. Clone this repository or download the script directly:
+   ```bash
+   git clone https://github.com/yourusername/photo-sorter.git
+
+## Usage
+To use Photo Sorter, you will need to run the script from the terminal and specify the path to the directory
+containing the files you want to sort. Here is the command format. 
+
+```bash
+python photo_sorter.py /path/to/your/directory
+```
+Replace `/path/to/your/directory` with the actual path to the directory where your files are located.
+
+
+## Contributing
+Contributions are welcome! If you have improvements or bug fixes, please feel free to fork the repository and submit a pull request.
 
 ## Function Overview
 
@@ -70,4 +95,6 @@ def moving_pictures(folder_location,extension_list):
             os.rename(old_path,new_path)
 ````
 
+## License
 
+MIT License
